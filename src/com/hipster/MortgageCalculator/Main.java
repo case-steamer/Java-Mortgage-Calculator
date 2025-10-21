@@ -10,8 +10,11 @@ public class Main {
         Scanner principleScan = new Scanner(System.in);
         Scanner interestScan = new Scanner(System.in);
         Scanner yearScan = new Scanner(System.in);
-        System.out.print("What is the principle? ");
-        int principle = principleScan.nextInt();
+        int principle = 0;
+         do {
+            System.out.print("What is the principle? ");
+            principle = principleScan.nextInt();
+        } while (principle < 1000 || principle > 1000000);
         System.out.print("What is the annual interest rate? ");
         double interestRate = interestScan.nextDouble();
         System.out.println("What is the term of the mortgage? ");
