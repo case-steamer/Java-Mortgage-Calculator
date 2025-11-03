@@ -1,4 +1,4 @@
-package com.hipster.MortgageCalculator.calc;
+package com.hipster.mortgagecalculator.calc;
 
 // class declaration
 public class Calculator {

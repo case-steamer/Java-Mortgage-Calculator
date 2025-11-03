@@ -1,9 +1,9 @@
 //A REPOSITORY HAS BEEN CREATED FOR THIS PROJECT. DO NOT CHANGE CODE ON MASTER. MAKE A BRANCH!!!
 // git branch <your-project-here>
 
-package com.hipster.MortgageCalculator;
+package com.hipster.mortgagecalculator;
 
-import com.hipster.MortgageCalculator.calc.Calculator;
+import com.hipster.mortgagecalculator.calc.Calculator;
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
