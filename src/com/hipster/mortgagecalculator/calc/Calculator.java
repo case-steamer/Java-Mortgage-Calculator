@@ -15,7 +15,7 @@ public class Calculator {
 
     // function
     public double calculateRate() {
-        double ratePercentage = annualInterest / 100;
+        double ratePercentage = (annualInterest / 100)/12;
         double dividend = ratePercentage * (Math.pow((1 + ratePercentage), (totalYears * 12)));
         double divisor = Math.pow((1 + ratePercentage), (totalYears * 12)) - 1;
         double quotient = dividend / divisor;
