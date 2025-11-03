@@ -1,3 +1,6 @@
+//A REPOSITORY HAS BEEN CREATED FOR THIS PROJECT. DO NOT CHANGE CODE ON MASTER. MAKE A BRANCH!!!
+// git branch <your-project-here>
+
 package com.hipster.MortgageCalculator;
 
 import com.hipster.MortgageCalculator.calc.Calculator;
