@@ -3,7 +3,6 @@
 
 package com.hipster.mortgagecalculator;
 
-import com.hipster.mortgagecalculator.calc.Calculator;
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
