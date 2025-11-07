@@ -15,12 +15,17 @@ public class Main {
         double interestRate = readNumber("What is the annual interest rate? ", 0, 30);
 
         int term = (int) readNumber("What is the term of the mortgage? ", 0, 30);
+        int termInMonths = term * 12;
 
         Calculator myRate = new Calculator(principle, interestRate, term);
         double monthlyPayment = myRate.calculateRate();
         DecimalFormat df = new DecimalFormat("0.00");
         String mp = df.format(monthlyPayment);
         System.out.println("Your monthly payment is $" + mp);
+
+        //for months in range(termInMonths):
+        //    inputTotal = termInMonths - months
+        //    Calculator.paymentSchedule(inputTotal)
     }
 
 
