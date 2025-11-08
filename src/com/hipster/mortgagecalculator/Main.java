@@ -4,6 +4,8 @@
 package com.hipster.mortgagecalculator;
 
 import java.text.DecimalFormat;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.Scanner;
 
 
@@ -21,11 +23,25 @@ public class Main {
         double monthlyPayment = myRate.calculateRate();
         DecimalFormat df = new DecimalFormat("0.00");
         String mp = df.format(monthlyPayment);
+        System.out.println("-------------");
         System.out.println("Your monthly payment is $" + mp);
+        System.out.println("-------------");
+        System.out.println("PAYMENT SCHEDULE");
+        System.out.println("-------------");
 
         //for months in range(termInMonths):
         //    inputTotal = termInMonths - months
         //    Calculator.paymentSchedule(inputTotal)
+        String[] payments = {};
+        for (int allMonths = termInMonths; allMonths > 0; allMonths--) {
+            String newPrince = myRate.paymentSchedule(allMonths, df);
+            payments = Arrays.copyOf(payments, payments.length + 1);
+            payments[payments.length - 1] = newPrince;
+        }
+
+        Collections.reverse(Arrays.asList(payments));
+        for (String payment : payments)
+            System.out.println(payment);
     }
 
 
